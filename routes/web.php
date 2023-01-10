@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Home\HomeSliderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +50,27 @@ Route::middleware('auth')->group(function () {
         Route::post('/update/password', 'UpdatePassword')->name('update.password');
          
     });
+
+
+
+    Route::controller(HomeSliderController::class)->group(function () {
+        Route::get('/home/slide', 'HomeSlider')->name('home.slide');
+    
+    
+    });
+
+
+
+
+    });
+
+
+
+    //SLIDER CREATE SLIDER
+
+    Route::controller(HomeSliderController::class)->group(function () {
+        Route::get('/home/slide', 'HomeSlider')->name('home.slide');
+    
     
     });
 
