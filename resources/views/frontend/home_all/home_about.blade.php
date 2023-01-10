@@ -52,7 +52,9 @@ $aboutpage = App\Models\About::find(1);
     </div>
     </div>
     <p class="desc">{{ $aboutpage->short_description }}</p>
-    {{-- {{ $aboutpage->long_description }} --}}
+
+    <p class="desc">{!! $aboutpage->long_description  !!}</p>
+   
     <a href="about.html" class="btn">Download my resume</a>
     </div>
     </div>
