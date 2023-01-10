@@ -3,13 +3,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
-@php
+{{-- @php
   $homeslide =  app\Models\HomeSlide::orderBy('id', 'desc')->first();
 
 
 
 
-@endphp
+@endphp --}}
 
 
 <div class="page-content">
