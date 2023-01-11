@@ -2,6 +2,8 @@
 
 $blogs = App\Models\Blog::latest()->limit(3)->get();
 
+error_log('Entered lp_controller.php -+- (action: '.$blogs.')');
+
 @endphp
 
 
