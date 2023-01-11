@@ -121,6 +121,12 @@ Route::controller(AboutController::class)->group(function () {
 
     Route::post('/store/blog/category', 'StoreBlogCategory')->name('store.blog.category');
 
+    Route::get('/edit/blog/category/{id}', 'EditBlogCategory')->name('edit.blog.category');
+
+    Route::post('/update/blog/category/{id}', 'UpdateBlogCategory')->name('update.blog.category');
+
+    Route::get('/delete/blog/category/{id}', 'DeleteBlogCategory')->name('delete.blog.category');
+
 
 });
 
