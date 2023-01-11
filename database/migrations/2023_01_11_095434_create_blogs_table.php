@@ -14,8 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('blogs', function (Blueprint $table) {
-        
-            $table->id();
+            $table->increments('id');
+           // $table->id();
             $table->string('blog_category_id')->nullable();
             $table->string('blog_title')->nullable();
             $table->string('blog_image')->nullable();

@@ -14,7 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('portfolios', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
+          //  $table->id();
             $table->string('portfolio_name')->nullable();
             $table->string('portfolio_title')->nullable();
             $table->string('portfolio_image')->nullable();

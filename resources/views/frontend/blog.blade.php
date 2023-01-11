@@ -71,6 +71,7 @@ Blog | EasyLearning Website
    {{-- //PAGINATION  --}}
 
         <div class="pagination-wrap">
+            {{-- pagination.custom --}}
             {{ $allblogs->links('vendor.pagination.custom') }}
         </div>
                         </div>
